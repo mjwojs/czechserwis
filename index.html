@@ -124,9 +124,9 @@
 
             <h1 class="h1 section-title">Mechanika blacharstwo lakiernictwo</h1>
 
-            <p class="section-text">
+            <p class="section-text" style="text-align: justify;">
               Naprawy bezgotówkowe OC/AC, holowanie 24/7, auta zastępcze. Naprawa samochodów sportowych oraz premium.
-              <br />Z nami wrócisz na drogę szybko
+              Z nami wrócisz na drogę szybko
               i bez stresu.
             </p>
 
@@ -142,134 +142,6 @@
             <img src="./assets/images/hero-banner.png" width="1228" height="789" alt="red motor vehicle"
               class="move-anim">
           </figure> -->
-          <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <img src="./assets/images/porsche.jpg" alt="banner 1">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="./assets/images/porsche-plyta.jpg" alt="banner 2">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="./assets/images/porsche2.jpg" alt="banner 3">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="./assets/images/porsche3.jpg" alt="banner 4">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="./assets/images/20190716_154444_resized_1.jpg" alt="banner 5">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="./assets/images/20190822_181308_resized.jpg" alt="banner 6">
-            </div>
-
-            <div class="mySlides fade">
-              <img src="./assets/images/IMG-20250731-WA0011.jpg" alt="banner 7">
-            </div>
-
-            <!-- przyciski -->
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-          </div>
-
-          <style>
-            .slideshow-container {
-              position: relative;
-              max-width: 100%;
-              margin: auto;
-              overflow: hidden;
-              border-radius: 12px;
-              padding-bottom: 12px;
-              /* więcej miejsca w mobilnej */
-            }
-
-            .mySlides {
-              display: none;
-            }
-
-            .mySlides img {
-              width: 100%;
-              display: block;
-              border-radius: 12px;
-            }
-
-            .fade {
-              animation: fadeEffect 1s;
-            }
-
-            @keyframes fadeEffect {
-              from {
-                opacity: 0.4
-              }
-
-              to {
-                opacity: 1
-              }
-            }
-
-            .prev,
-            .next {
-              cursor: pointer;
-              position: absolute;
-              top: 50%;
-              width: 44px;
-              /* stały rozmiar */
-              height: 44px;
-              line-height: 44px;
-              margin-top: -22px;
-              color: white;
-              font-weight: bold;
-              font-size: 24px;
-              user-select: none;
-              background: rgba(0, 0, 0, 0.4);
-              border-radius: 50%;
-              text-align: center;
-              transition: background 0.3s;
-            }
-
-            .prev:hover,
-            .next:hover {
-              background: rgba(0, 0, 0, 0.7);
-            }
-
-            .next {
-              right: 10px;
-            }
-
-            .prev {
-              left: 10px;
-            }
-          </style>
-
-          <script>
-            let slideIndex = 0;
-            let slideTimer;
-
-            function showSlides() {
-              let slides = document.getElementsByClassName("mySlides");
-              for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) { slideIndex = 1 }
-              slides[slideIndex - 1].style.display = "block";
-
-              slideTimer = setTimeout(showSlides, 5000); // 5s między zdjęciami
-            }
-
-            function plusSlides(n) {
-              clearTimeout(slideTimer); // zatrzymanie automatu
-              slideIndex += n - 1;      // poprawne przesunięcie
-              showSlides();
-            }
-
-            showSlides();
-          </script>
 
         </div>
       </section>
@@ -361,14 +233,48 @@
               </div>
             </li>
 
-            <li class="service-banner">
-              <img src="./assets/images/services-5.png" width="646" height="380" loading="lazy" alt="Red Car"
-                class="move-anim">
-            </li>
+            <div class="slideshow-wrapper">
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="./assets/images/porsche.jpg" alt="banner 1">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="./assets/images/c43-fiolet.jpg" alt="banner 1">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="./assets/images/porsche-plyta.jpg" alt="banner 2">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="./assets/images/porsche2.jpg" alt="banner 3">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="./assets/images/porsche3.jpg" alt="banner 4">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="./assets/images/20190716_154444_resized_1.jpg" alt="banner 5">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="./assets/images/20190822_181308_resized.jpg" alt="banner 6">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="./assets/images/IMG-20250731-WA0011.jpg" alt="banner 7">
+                </div>
+
+                <button class="slide-btn prev" onclick="plusSlides(-1)">❮</button>
+                <button class="slide-btn next" onclick="plusSlides(1)">❯</button>
+              </div>
+            </div>
 
             <li>
               <div class="service-card">
-
                 <figure class="card-icon">
                   <img src="./assets/images/services-6.png" width="110" height="110" loading="lazy"
                     alt="Steering Repair">
@@ -379,9 +285,7 @@
                 <p class="card-text">
                   Profesjonalna wymiana rozrządów i części eksploatacyjnych dla bezpiecznej i niezawodnej jazdy.
                 </p>
-
-                <a href="#" class="btn-link">Read more</a>
-
+                <a href="#" class="btn-link">Pokaż więcej</a>
               </div>
             </li>
 
@@ -414,9 +318,9 @@
 
           <div class="about-content">
 
-            <p class="section-subtitle :dark">About Us</p>
+            <p class="section-subtitle :dark">O nas</p>
 
-            <h2 class="h2 section-title">We’re Commited to Meet the quality</h2>
+            <h2 class="h2 section-title">Jakość i zaufanie ponad wszystko</h2>
 
             <p class="section-text">
               Quis autem vel eum iure reprehenderit qui in ea volu velit esse quam nihil molestiae consequatur, vel
@@ -431,25 +335,25 @@
 
               <li class="about-item">
                 <p>
-                  <strong class="display-1 strong">8K+</strong> Happy Clients
+                  <strong class="display-1 strong">8K+</strong> Zadowolonych klientów
                 </p>
               </li>
 
               <li class="about-item">
                 <p>
-                  <strong class="display-1 strong">22+</strong> Instruments
+                  <strong class="display-1 strong">100+</strong> Możliwości
                 </p>
               </li>
 
               <li class="about-item">
                 <p>
-                  <strong class="display-1 strong">50+</strong> Years in market
+                  <strong class="display-1 strong">20+</strong> Lat doświadczenia
                 </p>
               </li>
 
               <li class="about-item">
                 <p>
-                  <strong class="display-1 strong">99%</strong> Projects completed
+                  <strong class="display-1 strong">100%</strong> Ukończonych napraw
                 </p>
               </li>
 
@@ -471,9 +375,9 @@
       <section class="section work" aria-labelledby="work-label">
         <div class="container">
 
-          <p class="section-subtitle :light" id="work-label">Our Work</p>
+          <p class="section-subtitle :light" id="work-label">Nasze realizacje</p>
 
-          <h2 class="h2 section-title">Latest projects we have done</h2>
+          <h2 class="h2 section-title" style="color: azure;">Ostatnie projekty</h2>
 
           <ul class="has-scrollbar">
 
@@ -481,14 +385,14 @@
               <div class="work-card">
 
                 <figure class="card-banner img-holder" style="--width: 350; --height: 406;">
-                  <img src="./assets/images/work-1.jpg" width="350" height="406" loading="lazy" alt="Engine Repair"
+                  <img src="./assets/images/remont.jpeg" width="350" height="406" loading="lazy" alt="Engine Repair"
                     class="img-cover">
                 </figure>
 
                 <div class="card-content">
-                  <p class="card-subtitle">Auto Repair</p>
+                  <p class="card-subtitle">Mechanika</p>
 
-                  <h3 class="h3 card-title">Engine Repair</h3>
+                  <h3 class="h3 card-title">Remont silnika</h3>
 
                   <a href="#" class="card-btn">
                     <span class="material-symbols-rounded">arrow_forward</span>
@@ -598,7 +502,7 @@
         <ul class="footer-list">
 
           <li>
-            <p class="h3">Opening Hours</p>
+            <p class="h3">Godziny otwarcia</p>
           </li>
 
           <li>
@@ -624,7 +528,7 @@
         <ul class="footer-list">
 
           <li>
-            <p class="h3">Contact Info</p>
+            <p class="h3">Kontakt</p>
           </li>
 
           <li>
@@ -663,7 +567,7 @@
     <div class="footer-bottom">
       <div class="container">
 
-        <p class="copyright">Copyright 2025</p>
+        <p class="copyright">Copyright MW 2025</p>
 
         <img src="./assets/images/footer-shape-2.png" width="778" height="335" loading="lazy" alt="Shape"
           class="shape shape-2">
