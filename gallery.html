@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +17,10 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
 </head>
+
 <body>
 
-    <!-- tło wideo -->
+  <!-- tło wideo -->
   <div class="video-background">
     <video autoplay muted loop playsinline>
       <source src="./assets/images/movie.mp4" type="video/mp4">
@@ -76,53 +78,81 @@
     </div>
   </header>
 
-
-  <!-- HERO -->
-  <!-- <section class="hero has-bg-image" style="background-image: url('./assets/images/service-bg.jpg');">
-    <div class="container">
-      <h1 class="h1 section-title" style="color: white;">Nasze realizacje</h1>
-      <p class="section-text" style="color: white;">
-        Zobacz wybrane projekty – zdjęcia i filmy z napraw powypadkowych, renowacji oraz realizacji premium.
-      </p>
-    </div>
-  </section> -->
-
-  <!-- GALLERY -->
-  <main class="section gallery">
-    <div class="container">
-
-      <!-- Album 1 -->
-      <div class="album">
-        <h2 class="h2 section-title">Porsche GT4 – kompleksowa renowacja</h2>
-        <div class="media-grid">
-          <img src="./assets/images/foto/porsche/porsche-1.jpg" alt="Porsche naprawa 1">
-          <img src="./assets/images/foto/porsche/porsche-2.jpg" alt="Porsche naprawa 2">
-          <video controls>
-            <source src="./assets/videos/porsche.mp4" type="video/mp4">
-            Twoja przeglądarka nie obsługuje video.
-          </video>
-        </div>
+  <main>
+    <article>
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="./assets/images/movie.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
 
-      <!-- Album 2 -->
-      <div class="album">
-        <h2 class="h2 section-title">Mercedes C43 AMG – lakierowanie i detailing</h2>
-        <div class="media-grid">
-          <img src="./assets/images/foto/mercedes/c43-1.jpg" alt="C43 AMG 1">
-          <img src="./assets/images/foto/mercedes/c43-2.jpg" alt="C43 AMG 2">
-        </div>
-      </div>
+      <section id="home" class="hero has-bg-image" aria-label="home">
+        <div class="container">
 
-      <!-- Album 3 -->
-      <div class="album">
-        <h2 class="h2 section-title">BMW – wymiana dachu</h2>
-        <div class="media-grid">
-          <img src="./assets/images/foto/dach/dach-1.jpg" alt="BMW dach 1">
-          <img src="./assets/images/foto/dach/dach-2.jpg" alt="BMW dach 2">
-        </div>
-      </div>
+          <div class="hero-content">
 
-    </div>
+            <p class="section-subtitle :dark">Kompleksowa naprawa aut powypadkowych</p>
+
+            <h1 class="h1 section-title">Nasze realizacje</h1>
+
+            <p class="section-text" style="text-align: justify;">
+              Zobacz wybrane projekty – zdjęcia i filmy z napraw powypadkowych, renowacji oraz realizacji premium.
+            </p>
+
+            <a href="#" class="btn" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%);">
+              <span class="material-symbols-rounded">expand_more</span>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+      <main class="section gallery has-bg-image" style="background-image: url('./assets/images/service-bg.jpg');">
+        <div class="container">
+
+          <h1 class="h2 section-title" style="color: red;">Nasze realizacje</h1>
+          <p class="section-text" style="color: white;">
+
+          </p>
+
+          <!-- Album 1 -->
+          <div class="album">
+            <h2 class="h3 card-title">Porsche GT4 – kompleksowa renowacja</h2>
+            <div class="media-grid">
+              <img src="./assets/images/foto/porsche/porsche-1.jpg" alt="Porsche naprawa 1">
+              <img src="./assets/images/foto/porsche/porsche-2.jpg" alt="Porsche naprawa 2">
+              <video controls>
+                <source src="./assets/videos/porsche.mp4" type="video/mp4">
+                Twoja przeglądarka nie obsługuje video.
+              </video>
+            </div>
+          </div>
+
+          <!-- Album 2 -->
+          <div class="album">
+            <h2 class="h3 card-title">Mercedes C43 AMG – lakierowanie i detailing</h2>
+            <div class="media-grid">
+              <img src="./assets/images/foto/mercedes/c43-1.jpg" alt="C43 AMG 1">
+              <img src="./assets/images/foto/mercedes/c43-2.jpg" alt="C43 AMG 2">
+            </div>
+          </div>
+
+          <!-- Album 3 -->
+          <div class="album">
+            <h2 class="h3 card-title">BMW – wymiana dachu</h2>
+            <div class="media-grid">
+              <img src="./assets/images/foto/dach/dach-1.jpg" alt="BMW dach 1">
+              <img src="./assets/images/foto/dach/dach-2.jpg" alt="BMW dach 2">
+            </div>
+          </div>
+
+        </div>
+    </article>
   </main>
 
   <!-- FOOTER -->
@@ -147,4 +177,5 @@
   </footer>
 
 </body>
+
 </html>
